@@ -10,8 +10,6 @@ export default function Home() {
   const [allCars, setAllCars] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  console.log(allCars);
-
   //search states
   const [manufacturer, setManufacturer] = useState("");
   const [model, setModel] = useState("");
@@ -44,7 +42,6 @@ export default function Home() {
   }
 
   useEffect(() => {
-    console.log(fuel, year, limit, manufacturer, model);
     getCars();
   }, [fuel, year, limit, manufacturer, limit])
 
